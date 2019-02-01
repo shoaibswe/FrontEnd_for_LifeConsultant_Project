@@ -1,30 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Life Consultant</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="drpdn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+
 <body>
-<div class="container">
-<h1>Hello</h1>
-<div class="jumbotron">
-<div id="mySidenav" class="sidenav">
-    <a href="#" id="Psychology">Psychology</a>
-    <a href="#" id="Doctor">Doctor</a>
-    <a href="#" id="Foods">Foods</a>
-    <a href="#" id="Traveling">Traveling</a>
-</div>  
-</div>
-</div>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="jumbotron">
+            <center>
+                <h1>We are your Life Consultant</h1>
+                <p>Sell your Experience and Get Help!</p>
+            </center>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="#" id="Psychology">Psychology</a>
+            <a href="#" id="Doctor">Doctor</a>
+            <a href="#" id="Foods">Foods</a>
+            <a href="#" id="Traveling">Traveling</a>
+        </div>
+
+        <button class="tablink" onclick="openPage('Services', this, 'red')">Services</button>
+        <button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen">Home</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+        <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+        <div id="Services" class="tabcontent">
+            <h3>Hello!</h3>
+            <p>Get your solution and serve people!</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2" style="background-color:#4CAF50;">
+                        <div class="dropdown">
+                            <button class="dropbtn">Psychologial</button>
+                            <div class="dropdown-content">
+                                <a href="#">Psychology</a>
+                                <a href="#">Love</a>
+                                <a href="#">Music</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2" style="background-color:#4CAF50;">
+                        <div class="dropdown">
+                            <button class="dropbtn">Food</button>
+                            <div class="dropdown-content">
+                                <a href="#">Rasturant</a>
+                                <a href="#">Cookings</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2" style="background-color:#4CAF50;">
+                        <div class="dropdown">
+                            <button class="dropbtn">Outing</button>
+                            <div class="dropdown-content">
+                                <a href="#">Traveling</a>
+                                <a href="#">Party</a>
+                                <a href="#">Shopping</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2" style="background-color:#4CAF50;">
+                        <div class="dropdown">
+                            <button class="dropbtn">Games</button>
+                            <div class="dropdown-content">
+                                <a href="#">Sports</a>
+                                <a href="#">Computer Games</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2" style="background-color:#4CAF50;">
+                        <div class="dropdown">
+                            <button class="dropbtn">Educations</button>
+                            <div class="dropdown-content">
+                                <a href="#">Study</a>
+                                <a href="#">Tehnology</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2" style="background-color:#4CAF50;">
+                        <div class="dropdown">
+                            <button class="dropbtn">Others</button>
+                            <div class="dropdown-content">
+                                <a href="#">Doctor</a>
+                                <a href="#">Gardening</a>
+                                <a href="#">Not in topic? Other</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="Home" class="tabcontent">
+              <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                            <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="LifeConsultant.jpg" alt="Los Angeles">
+                        <div class="carousel-caption">
+                            <h3 style="color:black">Hello</h3>
+                            <p style="color:black">Mr X!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slider2.jpg" alt="Chicago">
+                        <div class="carousel-caption">
+                            <h3>Welcome</h3>
+                            <p>Get soluton!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slider3.jpg" alt="New York">
+                        <div class="carousel-caption">
+                            <h3>Stay Connected</h3>
+                            <p>Stay Happy</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                            <img src="slider4.jpg" alt="New York">
+                            <div class="carousel-caption">
+                                <h3>We are here</h3>
+                                <p>to Help you</p>
+                            </div>
+                    </div>
+                </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+    </div>
+    </div>
+
+    <script src="js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 
 
 </body>
+
 </html>
