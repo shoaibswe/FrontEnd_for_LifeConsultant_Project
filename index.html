@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Life Consultant</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="drpdn.css">
+    <link rel="stylesheet" type="text/css" href="digin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -32,7 +36,7 @@
         <button class="tablink" onclick="openPage('Services', this, 'red')">Services</button>
         <button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen">Home</button>
         <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-        <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+        <button class="tablink" onclick="openPage('DigIn', this, 'orange')">Dig In</button>
 
         <div id="Services" class="tabcontent">
             <h3>Hello!</h3>
@@ -104,7 +108,7 @@
 
 
         <div id="Home" class="tabcontent">
-              <div id="demo" class="carousel slide" data-ride="carousel">
+            <div id="demo" class="carousel slide" data-ride="carousel">
 
                 <!-- Indicators -->
                 <ul class="carousel-indicators">
@@ -114,7 +118,7 @@
                 </ul>
 
                 <!-- The slideshow -->
-                            <div class="carousel-inner">
+                <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="LifeConsultant.jpg" alt="Los Angeles">
                         <div class="carousel-caption">
@@ -137,34 +141,166 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                            <img src="slider4.jpg" alt="New York">
-                            <div class="carousel-caption">
-                                <h3>We are here</h3>
-                                <p>to Help you</p>
-                            </div>
+                        <img src="slider4.jpg" alt="New York">
+                        <div class="carousel-caption">
+                            <h3>We are here</h3>
+                            <p>to Help you</p>
+                        </div>
                     </div>
                 </div>
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
         </div>
 
 
-    </div>
 
-    <div id="Contact" class="tabcontent">
-        <h3>Contact</h3>
-        <p>Get in touch, or swing by for a cup of coffee.</p>
-    </div>
 
-    <div id="About" class="tabcontent">
-        <h3>About</h3>
-        <p>Who we are and what we do.</p>
-    </div>
+
+
+
+
+
+        <div id="DigIn" class="tabcontent">
+            <h3>Why Late?</h3>
+            <p>Lets ig In...</p>
+
+            <div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+                        <h3>Welcome</h3>
+                        <p>Share your Experience, Get hep and Earn Money!</p>
+                        <a href="loginform.html"> <input type="submit" name="" value="Login" /></a>
+                        <br />
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                    aria-controls="home" aria-selected="true">Employee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">Hirer</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Apply as a Employee</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Confirm Password *"
+                                                value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="maxl">
+                                                <label class="radio inline">
+                                                    <input type="radio" name="gender" value="male" checked>
+                                                    <span> Male </span>
+                                                </label>
+                                                <label class="radio inline">
+                                                    <input type="radio" name="gender" value="female">
+                                                    <span>Female </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control"
+                                                placeholder="Your Phone *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option class="hidden" selected disabled>Please select your Sequrity
+                                                    Question</option>
+                                                <option>What is your Birthdate?</option>
+                                                <option>What is Your old Phone Number</option>
+                                                <option>What is your Pet Name?</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Enter Your Answer *"
+                                                value="" />
+                                        </div>
+                                        <input type="submit" class="btnRegister" value="Register" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <h3 class="register-heading">Apply as a Hirer</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" maxlength="10" minlength="10" class="form-control"
+                                                placeholder="Phone *" value="" />
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Confirm Password *"
+                                                value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option class="hidden" selected disabled>Please select your Sequrity
+                                                    Question</option>
+                                                <option>What is your Birthdate?</option>
+                                                <option>What is Your old Phone Number</option>
+                                                <option>What is your Pet Name?</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="`Answer *" value="" />
+                                        </div>
+                                        <input type="submit" class="btnRegister" value="Register" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
     <script src="js.js"></script>
